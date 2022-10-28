@@ -6,7 +6,19 @@
     <title>Main Page</title>
     <link rel="stylesheet" href ="css\indexStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/lib/main.css"></script>
+    <script src="lib/main.js"></script> 
+    <script>
 
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
 </head>
 
 <body>
@@ -34,7 +46,14 @@
         </div>
     </div>
     </div>
+  
+
 </div>
 
+<br><br><br><br><br><br>
+
+<div id='calendar'></div>
+
+<br>
 </body>
 </html>

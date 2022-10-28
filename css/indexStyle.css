@@ -62,3 +62,22 @@
         border: none;
         cursor: pointer;
 }
+
+html, body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+        font-size: 14px;
+      }
+      .App {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .popver {
+        top: -999px;
+        left: -999px;
+        position: absolute;
+        background: red;
+        text-align: center;
+        z-index: 9999;
+      }
